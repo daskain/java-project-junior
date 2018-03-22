@@ -1,3 +1,5 @@
+/* package whatever; // don't place package name! */
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -13,16 +15,20 @@ class Ideone
 			arr[i] = rand.nextInt(50); // zapolnenie
 			
 		}
-		
+		System.out.println(Arrays.toString(arr));
+		int sum2 = 0;
 		int N = 0;
-		int sum2 = arr[(N+2)];
-		for (N+=2; N <arr.length; N++){
+		for (N=2; N <arr.length; N++){
 			sum2 += arr[N];
 		}
+		System.out.println("sum2 "+sum2);
+		System.out.println("N "+ N);
+		N = 0;
 		int buf;
 		for (int sum1 = arr[N]; sum1 != sum2; sum1++){
 			sum1 += arr[N++];
 			sum2 += arr[(N+=2)];
+			System.out.println("sum1 "+ sum1);
 			if (sum1 == sum2){
 				System.out.println("SUM1 "+ sum1);
 			}
