@@ -1,0 +1,34 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int[] arr = new int[6]; // new array
+		Random rand = new Random();	// random generation value
+		for (int i = 0; i < arr.length; i++){
+			arr[i] = rand.nextInt(50); // zapolnenie
+			
+		}
+		
+		int N = 0;
+		int sum2 = arr[(N+2)];
+		for (N+=2; N <arr.length; N++){
+			sum2 += arr[N];
+		}
+		int buf;
+		for (int sum1 = arr[N]; sum1 != sum2; sum1++){
+			sum1 += arr[N++];
+			sum2 += arr[(N+=2)];
+			if (sum1 == sum2){
+				System.out.println("SUM1 "+ sum1);
+			}
+			else {
+				System.out.println("SUM1 -1");
+			}
+		}
+	}
+}
