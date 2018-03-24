@@ -15,6 +15,15 @@ class Ideone
 			arr[i] = rand.nextInt(50); // zapolnenie
 			
 		}
+		\*
+		 static int[] arr(int x, int y) {
+        int [] arr = new int[x];
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random()* (y * 2) - (y + 1));
+        }
+        return arr;
+    } generation array
+		*\
 		System.out.println(Arrays.toString(arr));
 		int sum2 = 0;
 		int N = 0;
