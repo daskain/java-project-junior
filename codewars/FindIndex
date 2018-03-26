@@ -1,0 +1,25 @@
+public class Kata {
+  public static int findEvenIndex(int[] arr) {
+        int sLeft = arr[0];
+        int sRight = 0;
+        int N;
+        for (int i = 2; i < arr.length; i++) {
+            sRight += arr[i];
+        }
+
+        for (N = 1; (sLeft == sRight) ^ (N < (arr.length - 1)); N++) {
+            if (sLeft != sRight) {
+                sLeft += arr[N];
+                sRight -= arr[N+1];
+            }
+            }
+
+            if (sLeft == sRight){
+                return N;
+            }
+            else {
+                return (-1);
+            }
+
+    }
+}
