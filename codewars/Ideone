@@ -1,4 +1,3 @@
-/* package whatever; // don't place package name! */
 
 import java.util.*;
 import java.lang.*;
@@ -47,3 +46,16 @@ class Ideone
 		}
 	}
 }
+/*
+	static int[] arr(int x, int y){
+		int[] arr = new int[x];
+      		Random rnd = new Random(); // новый генератор
+		for (int i = 0; i < arr.length; i++){
+			arr[i] = (rnd.nextInt(2*y+1) - y); // заполняем в дипазаоне от [-y; y]
+          	
+		}
+		return arr; //рабочий метод
+*/
+// (int) (Math.random() * 2 * y + 1) - y); 
+//(rnd.nextInt(2*y+1) - y); - working
+//System.out.println("y = "+ y + " next znach = " + rnd.nextInt(2 * y + 1) + " znach 2*y = " + (2*rnd.nextInt(y+1)));
