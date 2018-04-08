@@ -1,0 +1,7 @@
+public class Revers {
+
+  public static String rvr(String str) {
+    return (new StringBuilder(str).reverse().toString());
+  }
+
+}
