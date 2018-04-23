@@ -4,3 +4,13 @@ robot.getX(); // начальное состояние робота по Х
 		toX;	// место назначение по Х
 		toY;	// место назначение по У
 		for (;robot.getX() != toX;){
+		
+		int x1 = -4;
+		int x0 = -5;
+		if (x1 == x0) {
+			System.out.println("x1 = x0 " + (x1 == x0));
+		}
+		else if (x1 > x0) {
+			System.out.println("x1 > x0 " + (x1 > x0));
+		}
+		else System.out.println("x1 < x0 " + (x1 < x0));
